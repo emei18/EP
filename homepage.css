@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+.homepage-style{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    color: rgb(225, 255, 128);
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    text-align: center;
+    padding: 200px;
+}
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+a:link {
+    color: rgb(255, 255, 128);
+    text-decoration: none;
+}
+a:visited {
+    color:rgb(225, 255, 128);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(255, 196, 128);
+    text-decoration: none;
+    font-size: 45px;
+}
+a:active {
+    color: rgb(225, 255, 128);
+    text-decoration: none;
+}
+h1{
+  font-family: 'Cousine', monospace;
+  font-size: 25px;
+  color: rgb(225, 225, 128);
+}

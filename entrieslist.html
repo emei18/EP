@@ -1,0 +1,29 @@
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'personal/entries.css' %}">
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/hole_1f573-fe0f.png">
+<title></title>
+<!--maybe i can make this dynamic, where it shifts between my silly little nicknames? kind of like a calender flip 
+or like an old clock-->
+</head>
+<body style="background-color:rgb(32,32,32);"></body>
+<div class ="entry-list-style">
+<br>
+<a href="{% url 'home' %}">back</a>
+<br>
+{% if all_entries %}
+<ul>
+    {% for entry in all_entries %}
+    <li>
+        <a href="{% url 'entry' entry.pk %}">{{ entry.date }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+    <p>No entries?! Impossible...well clearly it's not impossible.</p>
+    {% endif %}
+{% endblock %}
+</div>

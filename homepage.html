@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'personal/homepage.css' %}">
+    <link rel="stylesheet" href="{% static 'personal/typewriter.css' %}">
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/hole_1f573-fe0f.png">
+<title>EP</title>
+</head>
+
+<body style="background-color:rgb(32, 32, 32);"></body>
+
+<div class="type">
+
+<h1>hi, my name is emily pamment and i'm an aspiring professional programmer. 
+i'm interested in data analysis, UI and UX design, and all things information! hopefully i start working on some projects to show for that...happy to have you here!</h1>
+
+</div>
+
+<div class ="homepage-style">
+<a href="{% url 'entries' %}">&#9658; personal</a>
+
+<br>
+
+<a href="{% url 'professional' %}">&#9658; professional</a>
+
+{% if request.user.is_superuser %}
+
+<br>
+
+<a href="{% url 'entry-create' %}">&#9658; admin</a>
+
+{% endif %}
+
+<br>
+<h1>
+<a href="{% url 'InfoisBeaut' %}">and check this out</a>
+</h1>
+</div>
+
+</body>
+
+</html>

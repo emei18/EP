@@ -1,0 +1,12 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/hole_1f573-fe0f.png">
+<title>New Entry</title>
+</head>
+<body style="background-color:rgb(255, 255, 255);"></body>
+<form action="" method="post">
+    {% csrf_token %}
+  <p>{{ form.as_p }}</p>
+    <input type="submit" value="binkbonk">
+</form>

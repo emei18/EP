@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+.entry-list-style{
+    font-family: 'Cousine', monospace;
+    font-size: 20px;
+    color: rgb(27, 122, 255);
+    text-align: center;
+}
+.entry-text{
+    font-family: 'Cousine', monospace;
+    font-size: 16px;
+    color: rgb(229, 229, 229);
+}
+ul{
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+a:link{
+color: rgb(27, 122, 255);
+text-decoration: none;
+}
+a:visited {
+color:rgb(27, 122, 255);
+text-decoration: none;
+}
+a:hover {
+color: rgb(27, 122, 255);
+text-decoration: none;
+font-size: 20.5px;
+}
+a:active {
+color:rgb(27, 122, 255);
+text-decoration: none;
+}
